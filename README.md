@@ -16,12 +16,15 @@ o ambiente de produção está preparado para o que é mais importe que é a reg
 
 um exemplo de resposta de voto [Heroku- back-votos](https://back-votos.herokuapp.com/votacao/resultado?pauta=P_1)
 
+###### rodando o projeto
+Apenas fazer o clone do projeto e fazer o "update project" com o maven e o projeto já estará disponivel em sua máquina.
+
 ### Objetivo 
 A API tem dois endpoints de url e essas endpoints tem o objetivo de fazer uma simulção de uma votação de associados. Por exemplo: 
-a url **https://back-votos.herokuapp.com/votacao?pauta=<paulta>P_1&idAssociado=1&resp=s** 
+a url **https://back-votos.herokuapp.com/votacao?pauta=[pauta]P_1&idAssociado=1&resp=s** 
 faz uma votação e para valer uma votação o associado tem que já estar cadastrado no banco de dados caso contrário não será permida a
 e somente a pauta pode ser o que quiser e a resposta somente 's' ou 'n'.
-Já com a url **https://back-votos.herokuapp.com/votacao/resultado?pauta=<pauta>** mostra o resultado parcial dos votos.
+Já com a url **https://back-votos.herokuapp.com/votacao/resultado?pauta=[pauta]** mostra o resultado parcial dos votos.
 
 ### banco de dados
 banco de dados(postgreSQL) = votacao
@@ -50,14 +53,14 @@ projeto não está deletando(resetando) resultados de votação.
 
 ### URL
 endpoints:
-https://back-votos.herokuapp.com/votacao?pauta=<pauta>&idAssociado=<idAssociado>&resp=<s/n>
+https://back-votos.herokuapp.com/votacao?pauta=[pauta]&idAssociado=[idAssociado]&resp=[s/n]
 informar as chaves e seu valor:
 -  KEY			    value
 - pauta			    <pauta>
 - idAssociado	    <1-4>
 - resp			    <s/n>
 
-https://back-votos.herokuapp.com/votacao/resultado?pauta=<pauta>
+https://back-votos.herokuapp.com/votacao/resultado?pauta=[pauta]
 retorno:{"pauta":"P_1","votosSim":1,"votosNao":0}
     
 ### hospedagem
