@@ -14,7 +14,7 @@ das tecnologias abaixo:
 Essas tecnologias listadas acima foi minha escolha por ser tecnologias altamente competentes para a craição de API's e com poucas configurações você já
 o ambiente de produção está preparado para o que é mais importe que é a regra de negócio do projeto. 
 
-um exemplo de resposta de voto [Heroku- back-votos](https://back-votos.herokuapp.com/votacao/resultado?pauta=P_1
+um exemplo de resposta de voto [Heroku- back-votos](https://back-votos.herokuapp.com/votacao/resultado?pauta=P_1)
 
 ### Objetivo 
 A API tem dois endpoints de url e essas endpoints tem o objetivo de fazer uma simulção de uma votação de associados. Por exemplo: 
@@ -32,10 +32,13 @@ id  pauta  resposta  id_associado
 4   P_1		S       3
 
 associados obs: já terá associados cadastrados
-id  nome
-1   joao
-2   marcos
-3   paulo
+1	João
+2	Maria
+3	José
+4	Paulo
+5	Julia
+6	Marcos
+7	Renata
 
 votacao_resultado
 id  pauta  qtd_votos
