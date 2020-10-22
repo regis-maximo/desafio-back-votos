@@ -26,23 +26,23 @@ Já com a url **https://back-votos.herokuapp.com/votacao/resultado?pauta=<pauta>
 ### banco de dados
 banco de dados(postgreSQL) = votacao
 votacao_pessoa, ex:
-id  pauta  resposta  id_associado
-1   P_1		S	1
-2   P_1		N       2
-3   P_2		S       1
-4   P_1		S       3
+- id  pauta  resposta  id_associado
+- 1   P_1		S	    1
+- 2   P_1		N       2
+- 3   P_2		S       1
+- 4   P_1		S       3
 
 associados obs: já terá associados cadastrados
-1	João
-2	Maria
-3	José
-4	Paulo
-5	Julia
-6	Marcos
-7	Renata
+- 1	João
+- 2	Maria
+- 3	José
+- 4	Paulo
+- 5	Julia
+- 6	Marcos
+- 7	Renata
 
-votacao_resultado
-id  pauta  qtd_votos
+- votacao_resultado
+- id  pauta  qtd_votos
 
 obs: tabela votacao_resultado está servindo apenas de modelo como nesse
 projeto não está deletando(resetando) resultados de votação.
@@ -51,18 +51,13 @@ projeto não está deletando(resetando) resultados de votação.
 endpoints:
 https://back-votos.herokuapp.com/votacao?pauta=<pauta>&idAssociado=<idAssociado>&resp=<s/n>
 informar as chaves e seu valor:
-KEY			value
-pauta			<pauta>
-idAssociado		<1-4>
-resp			<s/n>
+-  KEY			    value
+- pauta			    <pauta>
+- idAssociado	    <1-4>
+- resp			    <s/n>
 
 https://back-votos.herokuapp.com/votacao/resultado?pauta=<pauta>
-retorno:
-{
-    "pauta": "P_1",
-    "votosSim": 3,
-    "votosNao": 1
-}
-
+retorno:{"pauta":"P_1","votosSim":1,"votosNao":0}
+    
 ### hospedagem
 A api está hospedada no heroku e está disponivel em [Heroku- back-votos](https://back-votos.herokuapp.com/votacao/resultado?pauta=P_1).
