@@ -56,9 +56,9 @@ endpoints:
 https://back-votos.herokuapp.com/votacao?pauta=[pauta]&idAssociado=[idAssociado]&resp=[s/n]
 informar as chaves e seu valor:
 -  KEY			    value
-- pauta			    <pauta>
-- idAssociado	    <1-4>
-- resp			    <s/n>
+- pauta			    [pauta]
+- idAssociado	    [1-4]
+- resp			    [s/n]
 
 https://back-votos.herokuapp.com/votacao/resultado?pauta=[pauta]
 retorno:{"pauta":"P_1","votosSim":1,"votosNao":0}
