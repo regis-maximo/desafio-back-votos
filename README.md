@@ -25,14 +25,15 @@ Já com a url **https://back-votos.herokuapp.com/votacao/resultado?pauta=<pauta>
 
 ### banco de dados
 banco de dados(postgreSQL) = votacao
-votacao_pessoa, ex:
-- id  pauta  resposta  id_associado
-- 1   P_1		S	    1
-- 2   P_1		N       2
-- 3   P_2		S       1
-- 4   P_1		S       3
+- votacao_pessoa, ex:
+- id,  pauta,  resposta,  id_associado
+- 1;   P_1;		S;	    1
+- 2;   P_1;		N;       2
+- 3;   P_2;		S;       1
+- 4;   P_1;		S;       3
 
-associados obs: já terá associados cadastrados
+- associados obs: já terá associados cadastrados
+- id, nome
 - 1	João
 - 2	Maria
 - 3	José
