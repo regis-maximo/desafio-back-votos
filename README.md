@@ -1,8 +1,8 @@
 # API REST
 ## Resumo
 Essa API foi feita com Java em sua verão 8 junto com Spring Boot, banco de dados postgreSQL e com uso
-das tecnologias abaixo:
-https://back-votos.herokuapp.com/ 
+das tecnologias abaixo: 
+
 - Spring Boot DevTolls = para não ter que reiniciar o servidor toda vez que fizer alguma alteração no código.
 - Spring Data JPA = para fazer pesistência dos dados.
 - PostgreSQL Driver = para poder se conectar ao banco de dados postgres.
@@ -12,7 +12,9 @@ https://back-votos.herokuapp.com/
 - Junit = testes.
 - Postman = testes.
 Essas tecnologias listadas acima foi minha escolha por ser tecnologias altamente competentes para a craição de API's e com poucas configurações você já
-o ambiente de produção está preparado para o que é mais importe que é a regra de negócio do projeto.
+o ambiente de produção está preparado para o que é mais importe que é a regra de negócio do projeto. 
+
+um exemplo de resposta de voto [Heroku- back-votos](https://back-votos.herokuapp.com/votacao/resultado?pauta=P_1
 
 ### Objetivo 
 A API tem dois endpoints de url e essas endpoints tem o objetivo de fazer uma simulção de uma votação de associados. Por exemplo: 
